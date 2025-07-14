@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(120deg, #4f8cff 0%, #6a82fb 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+.stopwatch-container {
+    background: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    text-align: center;
+    min-width: 320px;
+}
+.display {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    letter-spacing: 2px;
+    color: #222;
+    background: #f4f6fb;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.controls button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #4f8cff;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+.controls button:hover {
+    background: #6a82fb;
+    transform: translateY(-2px);
+}
+.laps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+}
+.laps li {
+    background: #f4f6fb;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+@media (max-width: 480px) {
+    .stopwatch-container {
+        padding: 1rem 0.5rem;
+        min-width: 90vw;
+    }
+    .display {
+        font-size: 1.5rem;
+        padding: 0.7rem 1rem;
+    }
+    .controls button {
+        font-size: 0.9rem;
+        padding: 0.5rem 0.7rem;
+    }
+} 
